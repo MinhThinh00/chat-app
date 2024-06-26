@@ -13,7 +13,7 @@ const useGetOtherUser = () => {
        
         const token = userData ? JSON.parse(userData).token : '';
         //console.log(token, 3); // Kiểm tra giá trị của token
-        const res = await axios.get('http://localhost:8001/api/user', {
+        const res = await axios.get('https://chat-app-iota-blue.vercel.app/api/user', {
           //withCredentials:true,
           headers: {
             'Authorization': `Bearer ${token}`

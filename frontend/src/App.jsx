@@ -17,7 +17,7 @@ function App() {
 
   useEffect(()=>{
     if(authUser){
-      const socketio = io('http://localhost:8001', {
+      const socketio = io('https://chat-app-iota-blue.vercel.app', {
           query:{
             userId:authUser._id
           }

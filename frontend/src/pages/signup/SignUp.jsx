@@ -22,7 +22,7 @@ const SignUp = () => {
     console.log(input); 
 	
     try {
-      const res= await axios.post("http://localhost:8001/api/auth/signup", input)
+      const res= await axios.post("https://chat-app-iota-blue.vercel.app/api/auth/signup", input)
       setInput({
         fullName: "",
         username: "",

@@ -15,7 +15,7 @@ export const useGetMessages = () => {
                 if (!selectedUser) return;
                 const userData = Cookies.get('userData');
                 const token = userData ? JSON.parse(userData).token : '';
-                const res = await axios.get(`http://localhost:8001/api/message/${selectedUser._id}`, {
+                const res = await axios.get(`https://chat-app-iota-blue.vercel.app/api/message/${selectedUser._id}`, {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }

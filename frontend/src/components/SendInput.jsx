@@ -13,7 +13,7 @@ const SendInput = () => {
         e.preventDefault()
         const userData = Cookies.get('userData');
         const token = userData ? JSON.parse(userData).token : '';
-        const res = await axios.post(`http://localhost:8001/api/message/send/${selectedUser._id}`,
+        const res = await axios.post(`https://chat-app-iota-blue.vercel.app/api/message/send/${selectedUser._id}`,
             {message},
             {
                 headers: {

@@ -17,7 +17,7 @@ const Login = () => {
         e.preventDefault()
         
 		try {
-			const res= await axios.post("http://localhost:8001/api/auth/login", user)
+			const res= await axios.post("https://chat-app-iota-blue.vercel.app/api/auth/login", user)
 			console.log(res.data)
 			Cookies.set('userData', JSON.stringify(res.data));
 			console.log(Cookies.get('userData'), 1);

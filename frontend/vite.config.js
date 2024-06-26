@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/socket.io': {
-        target: 'http://localhost:8001',
+        target: 'https://chat-app-iota-blue.vercel.app',
         changeOrigin: true,
         ws: true
       }
