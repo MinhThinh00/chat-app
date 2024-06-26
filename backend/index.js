@@ -33,3 +33,6 @@ app.use('/api/message',messageRoute)
 server.listen(8001, () => {
     console.log('Server is running on port 8001!');
 })
+app.get('/test', (req, res) => {
+    res.send('Xin chào');
+});
